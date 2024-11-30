@@ -1,1 +1,27 @@
+import math
 
+print ("""Hello, this is a calculator to convert temperature degrees, for specific calculators please press:
+    1. (one) for Celsius to Farenheit
+    2. (two) for Celsius to Kelvin
+    3. (three) for Farenheit to Celsius
+    4. (four) for Farenheit to Kelvin
+    5. (five) for Kelvin to Celsius
+    6. (one) for Kelvin to Farenheit
+    """)
+    
+num = int(input("Please enter a number: "))
+
+float_num = float(input("Please enter a number: "))
+
+if (num == 1):
+    float_numre = (float_num * 9 / 5) + 32
+    
+    print ("The result of C° to F°: ", float_numre)
+elif (num == 2):
+    float_numre = float_num + 273.15
+    
+    print ("The result of C° to Kelvin: ", float_numre)
+elif (num == 3):
+    float_numre = (float_num - 32) * 5 / 9
+    
+    print ("The result of F° to C°: ", float_numre)
