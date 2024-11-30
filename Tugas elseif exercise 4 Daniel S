@@ -1,0 +1,9 @@
+print ("This is a triangle filter")
+
+sideA = float(input("Please input side A: "))
+sideB = float(input("Please input side B: "))
+sideC = float(input("Please input side C: "))
+
+if (sideA == sideB) and (sideB == sideC) and (sideC == sideA):
+    eqtri= sideA**2 / 4
+    print ("this is an equilateral triangle, result: ", eqtri, "√3")
