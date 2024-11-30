@@ -1,1 +1,9 @@
-print ("hello world :D")
+import math
+
+print ("This is an odd & even filter")
+num = int(input("please enter a number: "))
+
+if (num % 2 == 0):
+    print ("This is an even number: ", num)
+else:
+    print ("This is an odd number: ", num)
