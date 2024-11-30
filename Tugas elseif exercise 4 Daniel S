@@ -10,5 +10,11 @@ if (sideAdj == sideByp) and (sideByp == sideCop) and (sideCop == sideAdj):
 elif (sideAdj > sideByp) and (sideAdj > sideCop) and (sideByp == sideCop):
     print ("This is an isosceles triangle")
     
+elif (sideAdj > sideByp) and (sideCop < sideByp) and (sideAdj > sideCop):
+    print ("This is a scalene triangle")
+    
 elif (sideAdj < sideByp) and (sideByp > sideCop) and (sideAdj >= sideCop) or (sideCop >= sideAdj):
     print ("This is a right side of triangle")
+    
+else:
+    print ("This is NOT a triangle")
