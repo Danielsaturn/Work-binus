@@ -1,9 +1,14 @@
 print ("This is a triangle filter")
 
-sideA = float(input("Please input side A: "))
-sideB = float(input("Please input side B: "))
-sideC = float(input("Please input side C: "))
+sideAdj = float(input("Please input side A (base/adj): "))
+sideByp = float(input("Please input side B (side/hyp): "))
+sideCop = float(input("Please input side C (side/opp): "))
 
-if (sideA == sideB) and (sideB == sideC) and (sideC == sideA):
-    eqtri= sideA**2 / 4
-    print ("this is an equilateral triangle, result: ", eqtri, "√3")
+if (sideAdj == sideByp) and (sideByp == sideCop) and (sideCop == sideAdj):
+    print ("This is an equilateral triangle")
+    
+elif (sideAdj > sideByp) and (sideAdj > sideCop) and (sideByp == sideCop):
+    print ("This is an isosceles triangle")
+    
+elif (sideAdj < sideByp) and (sideByp > sideCop) and (sideAdj >= sideCop) or (sideCop >= sideAdj):
+    print ("This is a right side of triangle")
