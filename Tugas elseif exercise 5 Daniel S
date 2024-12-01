@@ -11,4 +11,4 @@ disc = valueB**2 - 4 * valueA * valueC
 squarerore = sqrt(abs(disc))
 
 if (disc < 0):
-    print ("This is an IMAGINARY solution")
+    print ("The problem was", str(valueA), "x²", str(valueB), "x", str(valueC), "and the solution is IMAGINARY")
