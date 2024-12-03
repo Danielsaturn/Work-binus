@@ -11,4 +11,16 @@ disc = valueB**2 - 4 * valueA * valueC
 squarerore = sqrt(abs(disc))
 
 if (disc < 0):
-    print ("The problem was", str(valueA), "x²", str(valueB), "x", str(valueC), "and the solution is IMAGINARY")
+    print (disc)
+    print ("The problem was", str(valueA), "x² +", str(valueB), "x +", str(valueC), "and the solution is IMAGINARY")
+    print (-valueB / (2 * valueA), "+ i", squarerore / (2*valueA))
+    print (-valueB / (2 * valueA), "+ i", squarerore / (2*valueA))
+    
+elif (disc == 0):
+    print ("The problem was", str(valueA), "x²", str(valueB), "x", str(valueC), "and the solution is REAL & SAME")
+    print (-valueB / (2 * valueA))
+    
+else:
+    print ("The problem was", str(valueA), "x²", str(valueB), "x", str(valueC), "and the solution is REAL")
+    print ((valueB + squarerore)/(2*valueA))
+    print ((valueB + squarerore)/(2*valueA))
