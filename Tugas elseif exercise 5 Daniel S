@@ -7,7 +7,7 @@ valueA = float(input("Please input the value of A: "))
 valueB = float(input("Please input the value of B: "))
 valueC = float(input("Please input the value of C: "))
 
-disc = valueB**2 - 4 * valueA * valueC
+disc = (valueB**2) - (4 * valueA * valueC)
 squarerore = sqrt(abs(disc))
 
 if (disc < 0):
